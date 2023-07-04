@@ -1,16 +1,16 @@
-# Understanding and Benchmarking Zero-Shot Adversarial Robustness for Foundation Models (ICLR 2023)
+# Robust Perception through Equivariance (ICML 2023)
 
 <p align="center">
   <p align="center" margin-bottom="0px">
     <a href="http://www.cs.columbia.edu/~mcz/"><strong>Chengzhi Mao*</strong></a>
     ·
-    <a href=""><strong>Lingyu Zhang</strong></a>
+    <a href="https://lingyu98.github.io"><strong>Lingyu Zhang</strong></a>
     ·
     <a href=""><strong>Abhishek Joshi</strong></a>
     ·
     <a href="http://www.cs.columbia.edu/~junfeng/"><strong>Junfeng Yang</strong></a>
     ·
-    <a href=""><strong>Hao Wang</strong></a>
+    <a href="http://www.wanghao.in"><strong>Hao Wang</strong></a>
     ·
     <a href="http://www.cs.columbia.edu/~vondrick/"><strong>Carl Vondrick</strong></a></p>
     <p align="center" margin-top="0px"><a href="https://arxiv.org/pdf/2212.06079.pdf">https://arxiv.org/pdf/2212.06079.pdf</a></p>
@@ -23,12 +23,14 @@ Deep networks for computer vision are not reliable when they encounter adversari
 
 ## Environment
 
-We use anaconda to manage the environment. The configuration file is: ``
+We use anaconda to manage the environment. The configuration file is: `conda env create -f environment_equi.yml`
 
 ## Cityscapes Segmentation Experiment
 
 Download the adversarial pretrained cityscapes checkpoint <a  href="https://cv.cs.columbia.edu/mcz/Equi4Robust/advtrain_drn_d_22_cityscapes.pth.tar">here </a>. 
 
 Download the vanilla pretrained cityscapes checkpoint <a  href="https://cv.cs.columbia.edu/mcz/Equi4Robust/clean_drn_d_22_cityscapes.pth.tar">here </a>. 
+
+Run test-time robustness:
 
 `CUDA_VISIBLE_DEVICES=0,1 python equi4robust.py`
