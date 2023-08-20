@@ -29,7 +29,7 @@ We use anaconda to manage the environment. The configuration file is: `conda env
 
 Download the adversarial pretrained cityscapes checkpoint <a  href="https://cv.cs.columbia.edu/mcz/Equi4Robust/advtrain_drn_d_22_cityscapes.pth.tar">here </a>. 
 
-Download the vanilla pretrained cityscapes checkpoint <a  href="https://cv.cs.columbia.edu/mcz/Equi4Robust/clean_drn_d_22_cityscapes.pth.tar">here </a>. 
+Download the vanilla pretrained cityscapes checkpoint <a  href="https://cv.cs.columbia.edu/mcz/Equi4Robust/clean_drn_d_22_cityscapes.pth">here </a>. 
 
 Run test-time robustness:
 
